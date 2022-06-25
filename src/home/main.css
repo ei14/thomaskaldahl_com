@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;1,500&display=swap');
+
+:root {
+	--fg: white;
+	--bg: black;
+	--content-width: 70vw;
+	--nav-height: 10vh;
+
+	--card-width: 33.33333%;
+	--card-pad: 2vh;
+}
+
+/* MAIN CONTENT */
+
+body {
+	margin: 0;
+	line-height: 1.5;
+
+	font: 3vh sans-serif;
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+h1 {
+	font: bold italic 8vh "JetBrains Mono", monospace;
+	margin-bottom: 0;
+}
+
+h2 {
+	font: bold italic 5vh "JetBrains Mono", monospace;
+}
+
+a {
+	color: #00ffff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: #ff0000;
+}
+
+img, video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	max-height: 75vh;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content {
+	position: absolute;
+	width: var(--content-width);
+	top: var(--nav-height);
+	left: calc((100vw - var(--content-width)) / 2);
+	padding-bottom: 15vh;
+}
+
+.muted {
+	color: #808080;
+	font-style: italic;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	/* height: var(--nav-height); */
+
+	background-image: linear-gradient(black, transparent);
+}
+
+.navitem {
+	position: relative;
+	display: inline-block;
+	padding: calc(var(--nav-height) / 4);
+	font-size: calc(var(--nav-height) / 2);
+
+	font-family: "JetBrains Mono", monospace;
+	color: var(--fg);
+	text-decoration: none;
+
+	text-shadow: 0 0 1vh black;
+}
+.navitem:hover, .navitem:active {
+	color: var(--bg);
+	background-color: var(--fg);
+	text-decoration: none;
+	text-shadow: none;
+}
+
+/* PROJECTS */
+
+.card {
+	display: inline-block;
+	width: calc(var(--card-width) - 2*var(--card-pad));
+	padding: var(--card-pad);
+	color: white;
+	vertical-align: top;
+}
+.card:hover {
+	text-decoration: none;
+}
+.card > img {
+	display: inline-block;
+	width: 100%;
+}
+.card > h3 {
+	font: bold italic 3vh "JetBrains Mono", monospace;
+	color: white;
+}
+.card > p {
+	font-size: 2vh;
+	color: #808080;
+}
+.card:hover > p {
+	color: white;
+}
