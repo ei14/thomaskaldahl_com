@@ -1,0 +1,17 @@
+Thomas Kaldahl's Website
+
+Home About Portfolio Résumé GitHub
+
+Thomas Kaldahl
+
+Hi! I'm Thomas Kaldahl.
+I am a sophomore at Rice University.
+I'm pursuing a Bachelor of Science in Mathematics.
+
+This website is intended as a showcase for my personal works and
+explorations.
+Feel free to browse around using the menu on top.
+
+My GitHub is ei14.
+
+Click here to view my résumé.
