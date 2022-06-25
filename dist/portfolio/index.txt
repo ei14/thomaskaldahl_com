@@ -1,0 +1,191 @@
+Projects by Thomas Kaldahl
+
+Home About Portfolio Résumé GitHub
+
+Portfolio
+
+Categories
+
+-   Programming
+-   Lab Reports
+-   Visual Arts
+-   Music Composition
+
+Programming
+
+Most of these projects were done for fun and solely created by myself,
+but AbleTube is the product of the HackRice 11 Hackathon at Rice
+University.
+
+[]
+
+Tab-less Togglable
+
+Chrome extension that lets you toggle between tabbed mode and tab-less
+mode
+
+June 2022
+
+[]
+
+Not-A-Watch
+
+Printed circuit board designs and working code for an ATtiny84-powered
+digital wristwatch
+
+December 2021
+
+[]
+
+AbleTube
+
+Chrome extension that enables motor-disabled people to use YouTube
+
+September 2021
+
+[]
+
+Number Reverse Engineering
+
+Program designed to determine expressions of numbers based on rational
+approximations
+
+August 2021
+
+[]
+
+FinLin
+
+GPU-optimized Linear Algebra library in C++ and OpenCL for vectors and
+matrices
+
+June 2021
+
+[]
+
+EAIS
+
+A 9-key keyboard designed for speedy note-taking
+
+May 2021
+
+Lab Reports
+
+I took two Physics courses in Rice: Honors Mechanics and Honors
+Electricity & Magnetism. I placed a substantial amount of effort into
+the lab reports for these courses.
+
+[]
+
+Induction
+
+Honors Electricity & Magnetism
+
+April 2021
+
+[]
+
+Resistor-Capacitor Circuits
+
+Honors Electricity & Magnetism
+
+March 2021
+
+[]
+
+Charges and Fields
+
+Honors Electricity & Magnetism
+
+February 2021
+
+[]
+
+Oscillations
+
+Honors Mechanics
+
+December 2020
+
+[]
+
+Rolling Motion
+
+Honors Mechanics
+
+November 2020
+
+[]
+
+Collisions
+
+Honors Mechanics
+
+November 2020
+
+[]
+
+Forces and Motion
+
+Honors Mechanics
+
+October 2020
+
+[]
+
+Motion Analysis
+
+Honors Mechanics
+
+September 2020
+
+Visual Arts
+
+From time to time, I use Blender 3D to make images and animations.
+
+[]
+
+Fluid Simulation
+
+More animations in Blender 3D using its built-in fluid physics simulator
+
+May 2021
+
+[]
+
+Soft Body Simulation
+
+Pretty animations in Blender 3D using its built-in soft body physics
+simulator
+
+May 2021
+
+[]
+
+Redstone Block
+
+An artistic rendition of the Redstone block from the game Minecraft
+
+May 2020
+
+Music Composition
+
+I occasionally use LMMS to produce original music.
+
+[]
+
+Graffiti
+
+February 2022
+
+[]
+
+Gas Giant
+
+November 2020
+
+[]
+
+Electric Sky
+
+April 2020
