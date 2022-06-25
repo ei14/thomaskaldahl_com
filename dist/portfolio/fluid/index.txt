@@ -1,7 +1,0 @@
-Fluid Simulation
-
-Home About Portfolio Résumé GitHub
-
-Fluid Simulation
-
-I used Blender 3D to simulate fluid flow.
