@@ -1,0 +1,27 @@
+Reddit Puzzle Thingy
+
+menu
+
+Myself Physics Miscellaneous
+
+This is u/ei283 responding to a post by u/PARREnoia on r/puzzles.
+Through some diagrams and animations, I'm going to try to illustrate how
+to solve the particular wooden block puzzle at hand.
+Here are all the pieces to the puzzle:
+[]
+There are three axis pieces, 5 identical leaf pieces, and 1 leaf piece
+with a small cutout.
+I created an animation below to roughly show the assembly process.
+
+First, the three axis pieces are assembled to create the base.
+You sort of have to hold it in place with your fingers, as the structure
+can sort of slide during assembly.
+When assembling the axes, it is important that from any view, only 2
+cutout sections can be seen, not 4 nor 0. Like so: []
+Then as shown in the video, I first add the leaf piece with the cutout.
+This piece is important because it can turn, creating room to add the
+last two pieces later.
+Three leaf pieces can trivially be added.
+The last two pieces can then be inserted by rotating the leaf piece with
+the cutout on it.
+Message me or reply to my comment if you have any questions!
