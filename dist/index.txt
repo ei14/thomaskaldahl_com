@@ -5,8 +5,7 @@ Home About Portfolio Résumé GitHub
 Thomas Kaldahl
 
 Hi! I'm Thomas Kaldahl.
-I am a senior at Rice University.
-I'm pursuing a Bachelor of Science in Mathematics.
+I am a Mathematics student with a BSc. from Rice University.
 
 This website is intended as a showcase for my personal works and
 explorations.
