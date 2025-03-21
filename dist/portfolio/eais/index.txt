@@ -9,9 +9,9 @@ Following my obsession with keyboard layouts, I made a layout which uses
 
 Contents
 
--   Specification
--   Design Intent
--   Source Code
+- Specification
+- Design Intent
+- Source Code
 
 Specification
 

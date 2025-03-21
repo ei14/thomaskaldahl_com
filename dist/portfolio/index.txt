@@ -6,10 +6,10 @@ Portfolio
 
 Categories
 
--   Programming
--   Lab Reports
--   Visual Arts
--   Music Composition
+- Programming
+- Lab Reports
+- Visual Arts
+- Music Composition
 
 Programming
 
