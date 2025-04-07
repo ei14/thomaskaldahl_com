@@ -11,6 +11,8 @@ This website is intended as a showcase for my personal works and
 explorations.
 Feel free to browse around using the menu on top.
 
-My GitHub is ei14.
+View my GitHub.
 
-Click here to view my résumé.
+View my résumé.
+
+Download my PGP key.
