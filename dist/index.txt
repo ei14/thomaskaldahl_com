@@ -5,10 +5,11 @@ Home About Portfolio Résumé GitHub
 Thomas Kaldahl
 
 Hi! I'm Thomas Kaldahl.
-I am a Mathematics student with a BSc. from Rice University.
+I am an incoming Mathematics PhD student at the University of Arizona.
+I earned my BSc. in Math at Rice University.
 
 This website is intended as a showcase for my personal works and
-explorations.
+explorations (though it's a bit out of date!).
 Feel free to browse around using the menu on top.
 
 View my GitHub.
