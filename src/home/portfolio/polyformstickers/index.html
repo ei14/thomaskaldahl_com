@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Polyform Stickers for Signal</title>
+		<!-- SUBST common.xml -->
+	</head>
+	<body>
+		<!-- SUBST bar.xml -->
+		<div class="content">
+			<h1>Polyform Stickers for Signal</h1>
+			<p>
+				Signal is a secure messaging app I use to chat with my friends.
+				Built in is the ability to send &quot;stickers,&quot; which are
+				basically still or animated images that come conveniently from
+				a prearranged pack.
+				Normally, these convey emotions, like a more expressive form of emoji.
+				But since Signal lets users create their own sticker packs, I
+				could not resist the urge to do something mathy, regardless of
+				whether or not the images can be used naturally in
+				conversation.
+			</p>
+
+			<h2>Contents</h2>
+			<ul>
+				<li><a href="#design">Design</a></li>
+				<li><a href="#code">Code to generate</a></li>
+				<li><a href="#downloads">Download links</a></li>
+			</ul>
+
+			<h2 id="design">Design</h2>
+			<img src="polyominoes_fixed.png" />
+			<p class="caption">Some fixed polyominoes.</p>
+
+			<p>
+				A <i>polyomino</i> is an arrangement of equally-sized squares placed edge-to-edge.
+				The name is a punny reinterpretation of the word &quot;domino,&quot; a shape with two squares (&quot;d(u)&quot; &quot;ominoes&quot;).
+				My first sticker pack featured all the <i>fixed</i> polyominoes having between 1 and 5 squares.
+				Here, fixed means that any flips and rotations of 90 degrees are considered to be distinct and counted separately.
+				Signal sets a cap of 200 stickers per pack, so I could fit up to order 5 polyominoes in my pack.
+			</p>
+			<p>
+				In case you use Signal and would like to install this sticker pack for your use,
+				I included download links at the <a href="#downloads">bottom of the page.</a>
+			</p>
+			<p>
+				I generated the polyominoes with a Python script.
+				If you don't mind the messiness, you can find the code in <a href="#code">the next section.</a>
+				It requires the Pillow image library, and it produces multiple PNG files.
+			</p>
+
+			<img src="182_7_C623000.png" />
+			<p class="caption">A rotating polyomino.</p>
+
+			<p>
+				Some would say two polyominoes are the same if one can be rotated to resemble the other.
+				If we still disallow flips, then we get the so-called <i>one-sided polyominoes,</i> of which there are substantially fewer than fixed polyominoes.
+				I didn't want to arbitrarily choose one rotation for each, so I animated them to rotate through all their rotations.
+			</p>
+			<p>
+				Some would go further and say two polyominoes are the same if one can be rotated and/or flipped to resemble the other.
+				This gives us the <i>free polyominoes,</i> and there are even fewer of these.
+				I decided not to make a sticker pack for these, since it would involve arbitrarily choosing an orientation, or complicating the animation to be orientation-indifferent.
+			</p>
+
+			<img src="polyhexes_fixed.png" />
+			<p class="caption">Some fixed polyhexes.</p>
+
+			<p>
+				We can play the same game with hexagons.
+				These shapes are called <i>polyhexes,</i> and I produced sticker packs for these as well.
+				Since a hexagon has more sides, there are more ways to connect a given number of them.
+				Therefore I had to stop at lower orders to fit the stickers into the allotted 200.
+			</p>
+			<p>
+				I'm guilty of some over-engineering here.
+				To handle the placements of hexagons on a hexagon grid,
+				I created a small Python library that handles the Eisenstein Integers,
+				a set of complex numbers that form a hexagonal lattice arrangement.
+				I implemented arithmetic for these, conversion to complex numbers, and a method that rounds any complex number to a closest Eisenstein Integer.
+				I also implemented Gaussian Integers, which live in a square grid arrangement.
+				The library is included in the <a href="#code">code section</a> below.
+			</p>
+
+			<img src="6_144_1e4400.png" />
+			<p class="caption">A rotating polyhex.</p>
+
+			<p>
+				I repeated the same process as with polyominoes to create a sticker pack for one-sided polyhexes.
+			</p>
+
+			<img src="polyiamonds_fixed.png" />
+			<p class="caption">Some fixed polyiamonds.</p>
+
+			<p>
+				There is only one more shape that regularly tiles the Euclidean plane: the triangle.
+				The polyomino equivalent for triangles is the <i>polyiamond,</i> a pun on &quot;diamond,&quot; the word for a shape with two triangles (&quot;d(uo)&quot; &quot;iamonds&quot;).
+			</p>
+			<p>
+				To produce these, I made good use of my complex integer library.
+				In the hexagonal case, every Eisenstein Integer nicely corresponds to a tiled hexagon.
+				In the image below, each dot is an Eisenstein Integer.
+				The blue ones correspond to triangles.
+				The red ones do not, and they happen to land on the triangle vertices.
+			</p>
+
+			<img src="eisenstein_triangle.avif" />
+			<p>
+				Treating these points as Eisenstein Integers, we can conveniently describe the red points as
+				Eisenstein Integers that are <i>congruent</i> to 0 <i>modulo</i> -1 + &omega;.
+				I did implement modular arithmetic into my complex integer library, making it easy to
+				describe triangles in code.
+				It even had the bonus effect of letting me determine the orientation of a triangle based on its congruency modulo -1 + &omega;.
+			</p>
+
+			<img src="8_00030406020c00000000.png" />
+			<p>
+				And of course, you know I had to animate rotating one-sided polyiamonds.
+			</p>
+
+			<h2 id="code">Code</h2>
+			Beware, the code is a bit messy.
+			<ul>
+				<li><a href="polyominoes_fixed.py">Fixed polyominoes.</a> Requires Pillow image library. Produces PNG files.</li>
+				<li><a href="polyominoes_onesided.py">One-sided polyominoes.</a> Requires Pillow image library. Produces animated PNG files.</li>
+				<li><a href="cint.py">Complex integer library.</a></li>
+				<li><a href="polyhexes_fixed.py">Fixed polyhexes.</a> Requires Cairo graphics library. Produces PNG files.</li>
+				<li><a href="polyhexes_onesided.py">One-sided polyhexes.</a> Requires Cairo graphics library. Produces directories of PNG animation frames.</li>
+				<li><a href="polyiamonds_fixed.py">Fixed polyiamonds.</a> Requires Cairo graphics library. Produces PNG files.</li>
+				<li><a href="polyiamonds_onesided.py">One-sided polyiamonds.</a> Requires Cairo graphics library. Produces directories of PNG animation frames.</li>
+			</ul>
+
+			<h2 id="downloads">Download Links</h2>
+			<ul>
+				<li><a href="https://signal.art/addstickers/#pack_id=50b605f129d4ab752ed054223aff2090&pack_key=2a427c685d85753461db132b996c24433cb86f661805690a5dc6cb2b5ac30746">Fixed Polyominoes, 1 &le; n &le; 5</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=fe1188fa73d53ff0791e00c1952cb687&pack_key=a7016604c5efa5df18d0e9f7b2b96c9d81b246a629171ca19f9abfc435442a6f">One-Sided Polyominoes, 1 &le; n &le; 6</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=c3784c571ab55606355ae45bafe52f6f&pack_key=e3a99c27efcfce298601205e94b7871a17dda4a53770937d9f0bbeb2e241a368">One-Sided Heptominoes</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=d14f33b0979955f5132dde8a5a33122b&pack_key=3bf8fe56fc7a2e1821712ca7e06ec777b19b12185d91161b5c1518b2b21a8650">Fixed Polyhexes, 1 &le; n &le; 4</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=b4e70c1e539b90a55e60a5f6ca2bf1d2&pack_key=83170e073765fd29e956b1ada7447916617e6d247982818b7507e3adafe7f34d">Fixed Pentahexes</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=cdbe12ae507e2b2aab42c4896bddce9f&pack_key=3441724c1865b84da5f95def4ca0a21a33fe60f9685283a7b6689b6b8b809061">One-Sided Polyhexes, 1 &le; n &le; 6</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=887fa02d4005b18f8475811326e7af01&pack_key=70cd87c588e03a57864fd37d60cd01c208e758f4e0e913b8609d593501203ee1">Fixed Polyiamonds, 1 ≤ n ≤ 6</a></li>
+				<li><a href="https://signal.art/addstickers/#pack_id=5a5c8882b7894a40ca96e1268297368f&pack_key=bc84c18c7dd8246f00149afc910d36a59900adadf0f1aa8821c7fc1e3afaeae2">One-Sided Polyiamonds, 1 ≤ n ≤ 8</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

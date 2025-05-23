@@ -1,0 +1,138 @@
+Polyform Stickers for Signal
+
+Home About Portfolio Résumé GitHub
+
+Polyform Stickers for Signal
+
+Signal is a secure messaging app I use to chat with my friends. Built in
+is the ability to send "stickers," which are basically still or animated
+images that come conveniently from a prearranged pack. Normally, these
+convey emotions, like a more expressive form of emoji. But since Signal
+lets users create their own sticker packs, I could not resist the urge
+to do something mathy, regardless of whether or not the images can be
+used naturally in conversation.
+
+Contents
+
+- Design
+- Code to generate
+- Download links
+
+Design
+
+[]
+
+Some fixed polyominoes.
+
+A polyomino is an arrangement of equally-sized squares placed
+edge-to-edge. The name is a punny reinterpretation of the word "domino,"
+a shape with two squares ("d(u)" "ominoes"). My first sticker pack
+featured all the fixed polyominoes having between 1 and 5 squares. Here,
+fixed means that any flips and rotations of 90 degrees are considered to
+be distinct and counted separately. Signal sets a cap of 200 stickers
+per pack, so I could fit up to order 5 polyominoes in my pack.
+
+In case you use Signal and would like to install this sticker pack for
+your use, I included download links at the bottom of the page.
+
+I generated the polyominoes with a Python script. If you don't mind the
+messiness, you can find the code in the next section. It requires the
+Pillow image library, and it produces multiple PNG files.
+
+[]
+
+A rotating polyomino.
+
+Some would say two polyominoes are the same if one can be rotated to
+resemble the other. If we still disallow flips, then we get the
+so-called one-sided polyominoes, of which there are substantially fewer
+than fixed polyominoes. I didn't want to arbitrarily choose one rotation
+for each, so I animated them to rotate through all their rotations.
+
+Some would go further and say two polyominoes are the same if one can be
+rotated and/or flipped to resemble the other. This gives us the free
+polyominoes, and there are even fewer of these. I decided not to make a
+sticker pack for these, since it would involve arbitrarily choosing an
+orientation, or complicating the animation to be
+orientation-indifferent.
+
+[]
+
+Some fixed polyhexes.
+
+We can play the same game with hexagons. These shapes are called
+polyhexes, and I produced sticker packs for these as well. Since a
+hexagon has more sides, there are more ways to connect a given number of
+them. Therefore I had to stop at lower orders to fit the stickers into
+the allotted 200.
+
+I'm guilty of some over-engineering here. To handle the placements of
+hexagons on a hexagon grid, I created a small Python library that
+handles the Eisenstein Integers, a set of complex numbers that form a
+hexagonal lattice arrangement. I implemented arithmetic for these,
+conversion to complex numbers, and a method that rounds any complex
+number to a closest Eisenstein Integer. I also implemented Gaussian
+Integers, which live in a square grid arrangement. The library is
+included in the code section below.
+
+[]
+
+A rotating polyhex.
+
+I repeated the same process as with polyominoes to create a sticker pack
+for one-sided polyhexes.
+
+[]
+
+Some fixed polyiamonds.
+
+There is only one more shape that regularly tiles the Euclidean plane:
+the triangle. The polyomino equivalent for triangles is the polyiamond,
+a pun on "diamond," the word for a shape with two triangles ("d(uo)"
+"iamonds").
+
+To produce these, I made good use of my complex integer library. In the
+hexagonal case, every Eisenstein Integer nicely corresponds to a tiled
+hexagon. In the image below, each dot is an Eisenstein Integer. The blue
+ones correspond to triangles. The red ones do not, and they happen to
+land on the triangle vertices.
+
+[]
+
+Treating these points as Eisenstein Integers, we can conveniently
+describe the red points as Eisenstein Integers that are congruent to 0
+modulo -1 + ω. I did implement modular arithmetic into my complex
+integer library, making it easy to describe triangles in code. It even
+had the bonus effect of letting me determine the orientation of a
+triangle based on its congruency modulo -1 + ω.
+
+[]
+
+And of course, you know I had to animate rotating one-sided polyiamonds.
+
+Code
+
+Beware, the code is a bit messy.
+
+- Fixed polyominoes. Requires Pillow image library. Produces PNG files.
+- One-sided polyominoes. Requires Pillow image library. Produces
+  animated PNG files.
+- Complex integer library.
+- Fixed polyhexes. Requires Cairo graphics library. Produces PNG files.
+- One-sided polyhexes. Requires Cairo graphics library. Produces
+  directories of PNG animation frames.
+- Fixed polyiamonds. Requires Cairo graphics library. Produces PNG
+  files.
+- One-sided polyiamonds. Requires Cairo graphics library. Produces
+  directories of PNG animation frames.
+
+Download Links
+
+- Fixed Polyominoes, 1 ≤ n ≤ 5
+- One-Sided Polyominoes, 1 ≤ n ≤ 6
+- One-Sided Heptominoes
+- Fixed Polyhexes, 1 ≤ n ≤ 4
+- Fixed Pentahexes
+- One-Sided Polyhexes, 1 ≤ n ≤ 6
+- Fixed Polyiamonds, 1 ≤ n ≤ 6
+- One-Sided Polyiamonds, 1 ≤ n ≤ 8
