@@ -124,3 +124,12 @@ table {
 .card:hover > p {
 	color: white;
 }
+
+/* POSTS */
+
+.caption {
+	font-size: 70%;
+	margin-top: 1vh;
+	text-align: center;
+	font-style: italic;
+}

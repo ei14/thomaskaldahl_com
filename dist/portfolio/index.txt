@@ -7,9 +7,9 @@ Portfolio
 Categories
 
 - Programming
-- Lab Reports
 - Visual Arts
 - Music Composition
+- Lab Reports
 
 Programming
 
@@ -22,7 +22,7 @@ University.
 Tab-less Togglable
 
 Chrome extension that lets you toggle between tabbed mode and tab-less
-mode
+mode.
 
 June 2022
 
@@ -31,7 +31,7 @@ June 2022
 Not-A-Watch
 
 Printed circuit board designs and working code for an ATtiny84-powered
-digital wristwatch
+digital wristwatch.
 
 December 2021
 
@@ -39,7 +39,7 @@ December 2021
 
 AbleTube
 
-Chrome extension that enables motor-disabled people to use YouTube
+Chrome extension that enables motor-disabled people to use YouTube.
 
 September 2021
 
@@ -48,7 +48,7 @@ September 2021
 Number Reverse Engineering
 
 Program designed to determine expressions of numbers based on rational
-approximations
+approximations.
 
 August 2021
 
@@ -57,7 +57,7 @@ August 2021
 FinLin
 
 GPU-optimized Linear Algebra library in C++ and OpenCL for vectors and
-matrices
+matrices.
 
 June 2021
 
@@ -65,9 +65,77 @@ June 2021
 
 EAIS
 
-A 9-key keyboard designed for speedy note-taking
+A 9-key keyboard designed for speedy note-taking.
 
 May 2021
+
+Visual Arts
+
+From time to time, I use Blender 3D to make images and animations.
+
+[]
+
+Integration Bee Trophies (2025)
+
+I was asked to create some new Integration Bee trophies.
+
+February 2025
+
+[]
+
+Integration Bee Trophy (2023)
+
+We 3D printed this trophy for an Integration Bee contest.
+
+October 2023
+
+[]
+
+Fluid Simulation
+
+More animations in Blender 3D using its built-in fluid physics
+simulator.
+
+May 2021
+
+[]
+
+Soft Body Simulation
+
+Pretty animations in Blender 3D using its built-in soft body physics
+simulator.
+
+May 2021
+
+[]
+
+Redstone Block
+
+An artistic rendition of the Redstone block from the game Minecraft.
+
+May 2020
+
+Music Composition
+
+I occasionally use LMMS to produce original music.
+
+[]
+
+Graffiti
+
+February 2022
+
+[]
+
+Gas Giant
+
+November 2020
+
+[]
+
+Electric Sky
+
+April 2020
 
 Lab Reports
 
@@ -138,54 +206,3 @@ Motion Analysis
 Honors Mechanics
 
 September 2020
-
-Visual Arts
-
-From time to time, I use Blender 3D to make images and animations.
-
-[]
-
-Fluid Simulation
-
-More animations in Blender 3D using its built-in fluid physics simulator
-
-May 2021
-
-[]
-
-Soft Body Simulation
-
-Pretty animations in Blender 3D using its built-in soft body physics
-simulator
-
-May 2021
-
-[]
-
-Redstone Block
-
-An artistic rendition of the Redstone block from the game Minecraft
-
-May 2020
-
-Music Composition
-
-I occasionally use LMMS to produce original music.
-
-[]
-
-Graffiti
-
-February 2022
-
-[]
-
-Gas Giant
-
-November 2020
-
-[]
-
-Electric Sky
-
-April 2020
