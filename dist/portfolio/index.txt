@@ -9,13 +9,20 @@ Categories
 - Programming
 - Visual Arts
 - Music Composition
-- Lab Reports
 
 Programming
 
 Most of these projects were done for fun and solely created by myself,
-but AbleTube is the product of the HackRice 11 Hackathon at Rice
-University.
+but AbleTube and Remedy are the products of the HackRice 11 and 12
+Hackathons at Rice University.
+
+[]
+
+Remedy
+
+Mental health support app for Rice University students.
+
+September 2022
 
 []
 
@@ -146,73 +153,3 @@ November 2020
 Electric Sky
 
 April 2020
-
-Lab Reports
-
-I took two Physics courses at Rice: Honors Mechanics and Honors
-Electricity & Magnetism. I placed a substantial amount of effort into
-the lab reports for these courses.
-
-[]
-
-Induction
-
-Honors Electricity & Magnetism
-
-April 2021
-
-[]
-
-Resistor-Capacitor Circuits
-
-Honors Electricity & Magnetism
-
-March 2021
-
-[]
-
-Charges and Fields
-
-Honors Electricity & Magnetism
-
-February 2021
-
-[]
-
-Oscillations
-
-Honors Mechanics
-
-December 2020
-
-[]
-
-Rolling Motion
-
-Honors Mechanics
-
-November 2020
-
-[]
-
-Collisions
-
-Honors Mechanics
-
-November 2020
-
-[]
-
-Forces and Motion
-
-Honors Mechanics
-
-October 2020
-
-[]
-
-Motion Analysis
-
-Honors Mechanics
-
-September 2020
